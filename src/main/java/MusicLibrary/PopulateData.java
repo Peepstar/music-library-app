@@ -16,7 +16,8 @@ public class PopulateData {
     public static boolean populateInitialData() {
 
         //CSV file with music as initial database
-        String csvFile = "C://Users//user//Desktop//MusicData//dataset.csv";
+        // --->>> Configure this path to your project path (DO NOT CHANGE AFTER "//music-library-app"<<<---
+        String csvFile = "path//to//your//project//music-library-app//src//main//resources//dataset.csv";
 
         //Map to keep track of primary keys for each data inserted on the DB and then use it to include foreign keys
         Map<String, Integer> keysMap = new HashMap<>();
@@ -150,6 +151,7 @@ public class PopulateData {
     }
 
     private static void createTablesAndIndexes() {
+
         //Creating SQL statements to create tables on database.
         String genreTable = "CREATE TABLE IF NOT EXISTS genre (" +
                 "id SERIAL PRIMARY KEY, " +
@@ -190,6 +192,8 @@ public class PopulateData {
             //Connecting to database
             Connection connection = ConnectToDB.initialConnection();
 
+
+            //Run statements to create tables and indexes.
             Statement genreStatement = connection.createStatement();
             genreStatement.execute(genreTable);
 
