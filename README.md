@@ -106,7 +106,7 @@ Ensure you have the following installed:
 **4. Configure path to the CSV file as per your local path**
 
 - Open `src/main/java/musiclibrary/PopulateData`
-- `Update String csvFile = "path//to//your//project"`
+- Update `String csvFile = "path//to//your//project"`
 
 **5. Run the app by running the Menu file**
 
@@ -128,7 +128,7 @@ Ensure you have the following installed:
 ##### 3. UPDATE/PUT
 ##### 4. READ/GET
 ##### 5. DROP Database
-##### 0. Exit application
+##### 0. EXIT application
 
 
 
