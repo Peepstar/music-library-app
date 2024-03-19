@@ -1,4 +1,4 @@
-package MusicLibrary;
+package musiclibrary;
 
 import java.io.*;
 import java.sql.*;
@@ -18,7 +18,6 @@ public class PopulateData {
         //CSV file with music as initial database
         // --->>> Configure this path to your project path (DO NOT CHANGE AFTER "//music-library-app"<<<---
         String csvFile = "path//to//your//project//music-library-app//src//main//resources//dataset.csv";
-
         //Map to keep track of primary keys for each data inserted on the DB and then use it to include foreign keys
         Map<String, Integer> keysMap = new HashMap<>();
         Instant startTime = Instant.now(); //To calculate time that takes to populate the data
